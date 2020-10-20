@@ -1,0 +1,25 @@
+/**
+ * Basic typography style for copy text
+ */
+html {
+    font-size: 100%;
+}
+
+body {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+* {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+a,
+a:visited {
+    color: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: poppins;
+}

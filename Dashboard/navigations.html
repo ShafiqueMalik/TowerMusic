@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="Content/font-awesome.css" rel="stylesheet" />
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button">
+            <i class="fa fa-bars"></i>
+        </button>
+
+        <div class="navbar-content" id="nav-content">
+            <ul class="navbar-nav left-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav right-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <h1>Shafiq Malik</h1>
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".navbar-toggler").click(function () {
+                $(".navbar-content").toggleClass("navbar-close");
+            });
+        });//end of ready
+    </script>
+</body>
+
+</html>

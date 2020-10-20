@@ -1,0 +1,18 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.btn-base {
+    background: rgba(255,255,255,.2);
+    padding: size(10) size(50);
+    display: inline-block;
+    border: 3px solid #fff;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: size(16);
+    color: white;
+    text-transform: capitalize;
+}
+.btn-login {
+    background-color: $clr-primary;
+   
+}

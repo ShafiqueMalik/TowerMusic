@@ -1,0 +1,11 @@
+﻿[
+  {
+    "outputFile": "gulpfile.es5.js",
+    "inputFile": "gulpfile.js"
+  },
+  
+  {
+    "outputFile": "css/app.css",
+    "inputFile": "sass/app.scss"
+  }
+]

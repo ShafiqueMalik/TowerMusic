@@ -1,0 +1,101 @@
+@mixin box($width, $height:$width) {
+    width: $width;
+    height: $height;
+}
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity = $opacity-ie); //IE8
+}
+@function size($size, $base:16) {
+    @return ($size / $base) * 1rem;
+}
+
+@mixin maxwidth($size){
+    @media(max-width:$size+"px"){
+        @content;
+    }
+}
+
+@mixin screen($size) {
+    /*$smob: "(min-width: 300px)";
+    $lmob: "(min-width: 576px)";
+    $tab: "(min-width: 768px)";
+    $lap: "(min-width: 992px)";
+    $desk: "(min-width: 1200px)";*/
+
+
+    @if $size == desk {
+        @media only screen and (min-width: 1200px) {
+            @content;
+        }
+    }
+    @else if $size == lap {
+        @media only screen and (min-width: 992px) {
+            @content;
+        }
+    }
+    @else if $size == tab {
+        @media only screen and (min-width: 768px) {
+            @content;
+        }
+    }
+    @else if $size == lmob {
+        @media only screen and (min-width: 576px) {
+            @content;
+        }
+    }
+    @else if $size == smob {
+        @media only screen and (min-width: 300px) {
+            @content;
+        }
+    }
+    @else {
+        @media #{$size} {
+            @content;
+        }
+    }
+}
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+@mixin abs-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+@mixin text-shorten($overflow: ellipsis) {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: $overflow;
+}
+
+h1 {
+    /*font-size: size(40);
+
+    width:size(1370);*/
+
+}

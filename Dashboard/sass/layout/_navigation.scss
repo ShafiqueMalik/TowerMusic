@@ -1,0 +1,58 @@
+﻿.navbar-top {
+    &.navbar-dark {
+        .navbar-collapse {
+            background-color: #343a40 !important;
+        }
+
+        .logo {
+            height: size(50);
+        }
+    }
+
+    .logo {
+        width: size(250);
+        height: size(100);
+    }
+
+    .nav-item {
+        text-transform: capitalize;
+
+        .nav-link {
+            font-weight: 700;
+        }
+    }
+
+    .nav-item:not(:first-child) {
+        margin-left: 40px;
+        /*@media(max-width:991px){
+            margin-left:0;
+        }*/
+        @include maxwidth(991) {
+            margin-left: 0;
+        }
+
+        ;
+    }
+
+
+    @media(max-width:991px) {
+        .navbar-collapse {
+            background-color: white;
+            color: black;
+            z-index: 10;
+        }
+
+        .has-children .drop-down {
+            transform: scaleY(1);
+            position: relative;
+        }
+    }
+
+    .has-children:hover > .drop-down {
+        transform: scaleY(1);
+
+        @media(max-width:991px) {
+            position: relative;
+        }
+    }
+}

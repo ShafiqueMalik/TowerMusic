@@ -1,0 +1,67 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.footer-main {
+    background-color: #292825;
+    padding: 40px 0;
+    .logo-con{
+        display:flex;
+        align-items:center;
+    }
+    .img-logo{
+        width:size(200);
+        height:size(100);
+    }
+    .menu-head {
+        color: white;
+        font-size: size(23);
+        line-height: size(32);
+        font-weight: 700;
+        text-transform:uppercase;
+    }
+
+    .menu-list {
+        li {
+            padding-left: 20px;
+            position: relative;
+            line-height: 38px;
+
+
+
+            a {
+                text-decoration: none;
+                color: #8c979e;
+
+              
+
+                &:before {
+                    content: "\f105";
+                    font-family: fontawesome;
+                    color: #8c979e;
+                    position: absolute;
+                    left: 0;
+                    line-height: 38px;
+                }
+
+               &:hover,&:focus, &:hover::before,&:focus::before {
+                    color: $clr-primary;
+                }
+            }
+        }
+    }
+}
+.footer-bottom {
+    padding: size(30) 0;
+    background-color: #242320;
+
+    .copyright {
+        margin: 0;
+        text-align: center;
+        color: white;
+
+        a {
+            color: #8c9597;
+            text-decoration:none;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+header {
+    position: relative;
+    min-height: 100vh;
+    background-image: url(../../images/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+
+    .header-content {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        padding: 0 size(20);
+        text-transform: capitalize;
+        text-align: center;
+        margin-top: size(150);
+
+        @media(max-width:678px) {
+           margin-top:size(75);
+        }
+
+        > * {
+            margin-bottom: size(20);
+        }
+
+        .heading-2 {
+            font-size: size(60);
+        }
+
+        @media(max-width:678px) {
+            .heading-1 {
+                font-size: size(35);
+            }
+
+            .heading-2 {
+                font-size: size(50);
+            }
+        }
+
+        @media(max-width:678px) {
+            .heading-1 {
+                font-size: size(30);
+            }
+
+            .heading-2 {
+                font-size: size(40);
+            }
+        }
+
+        .btn-cta {
+            background: rgba(255,255,255,.2);
+            margin: 0 size(15);
+            padding: size(10) size(50);
+            display: inline-block;
+            border: 3px solid #fff;
+            border-radius: 3px;
+            font-weight: 700;
+            font-size: size(16);
+            color: white;
+            text-transform: capitalize;
+        }
+    }
+}
